@@ -1,0 +1,691 @@
+// global styles 
+
+.btn-black {
+  @include btn-black;
+}
+
+.btn-blue {
+  @include btn-blue;
+}
+
+
+.hero {
+  // background: $blue;
+  background: $blue image-url('6.jpg');
+  background-size: 100% 100%;  
+  blockquote p{
+    font-family: $emphasis-font-family;
+    font-weight: 300;
+    font-size: 0.845em;
+    text-align: center;    
+    color: $white;
+    @include span-columns(10);    
+    float: none;
+    margin: 0 auto;    
+
+    &:last-child {
+      margin: 0 auto;
+    }
+  }
+
+  &.home-hero {
+    padding: 10em 0;
+    @include media($tablet) {
+      padding: 2em 0;
+      
+    }    
+  }
+
+}
+
+.quote-wrapper {
+  padding: 2em 0;
+  p{
+    margin: 0;
+    @include media($tablet_portrait){
+      text-align: center;
+    }    
+  }  
+  blockquote{
+    text-align: center;
+    @include media($tablet_portrait){
+      font-size: 1.5em;
+      
+
+    }     
+  }
+   
+  &.inner-quote-wrapper {
+    color: $white;
+    text-align: center;
+    padding: 5em 0;
+    @include media($tablet){
+      padding: 2em 0;
+    }
+    blockquote {
+      color: $white;
+    }
+  }  
+
+}
+
+.indepth-view {
+  text-align: center;
+  padding: 1.2em 0 1em;
+}
+
+.quote-author {
+  color: $blue;
+  font-family: $body-font-family;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.featured-quote {
+  padding: 3em;
+
+  blockquote {
+    text-align: center;
+
+  }
+
+}
+
+.value-strategy {
+  padding: 10em 0;
+  @include media($tablet) {
+    padding: 2em 0;
+    
+  }    
+  h1 {
+    color: $gray;
+    margin: 0;
+    line-height: 1.2;
+    font-size: 2.9em;
+  }
+
+  .copy {
+    @include span-columns(8);
+    text-align: center;
+    margin: 0 auto;
+    line-height: 2;
+    float: none;
+    @include media($tablet){
+      @include span-columns(8);
+    }
+  }
+
+  .copy-image {
+    @include span-columns(7);    
+    @include media($tablet){
+      @include span-columns(8);
+    }    
+  }  
+
+  .the-process {
+    padding: 2em 0;
+     div {
+      width: 45.76157%;
+      float: left;
+      margin-left: 3.4356%;
+      margin-top: 3%;
+      text-align: center;
+
+      p {
+        line-height: 1.8;
+      }
+      @include media($tablet) {
+
+        width: 52%;
+        margin: 0 auto;
+        float: none;
+        padding-bottom: 1em;
+
+        
+      }
+      @include media($tablet_portrait){
+        width: 85%;
+      }
+     }
+
+     .spotlight {
+      &:before {
+        content: '\1f506'; 
+        font-family: 'angleseven';
+        font-size: 4.7em;
+        color: $blue;
+        font-style: normal;
+        font-weight: normal;
+        speak: none;
+        display: inline-block;
+        text-decoration: inherit;
+        text-align: center;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1.1em;   
+      }        
+     } 
+     .strategy {
+      &:before {
+        content: '\e727'; 
+        font-family: 'angleseven';
+        font-size: 4.7em;
+        color: $blue;
+        font-style: normal;
+        font-weight: normal;
+        speak: none;
+        display: inline-block;
+        text-decoration: inherit;
+        text-align: center;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1.1em;   
+      }        
+     }    
+     .experience {
+      &:before {
+        content: '\e70a'; 
+        font-family: 'angleseven';
+        font-size: 4.7em;
+        color: $blue;
+        font-style: normal;
+        font-weight: normal;
+        speak: none;
+        display: inline-block;
+        text-decoration: inherit;
+        text-align: center;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1.1em;   
+      }        
+     }
+     .forward {
+      &:before {
+        content: '\e800'; 
+        font-family: 'angleseven';
+        font-size: 4.7em;
+        color: $blue;
+        font-style: normal;
+        font-weight: normal;
+        speak: none;
+        display: inline-block;
+        text-decoration: inherit;
+        text-align: center;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1.1em;   
+      }        
+     }           
+  }
+
+}
+
+.featured-project {
+  padding: 7em 0;
+  position: relative;
+  
+  @include media($tablet) {
+    padding: 2em 0;
+    
+  }  
+  background: $charcoal;
+
+  h2 {
+    color: $white;
+    margin-top: 0.2em;
+    @include media($tablet){
+      // font-size: 2.6em;
+      text-align: center;
+    }    
+  }
+
+  p {
+    color: $white;
+    font-family: $header-font-family;
+    line-height: 2;
+    @include media($tablet){
+      text-align: center;
+    }    
+  }
+
+  .project-thumbnail{
+    @include span-columns(7);
+
+    @include media($tablet_portrait){
+      @include span-columns(8);
+    }
+  }
+
+  a {
+    display: block;
+    position: relative;
+    
+  }
+  
+  .featured-wins {
+    @include span-columns(4);
+    list-style-type: none;
+    @include media($tablet_portrait){
+      @include span-columns(8);
+      padding: 1em 0;
+      margin-bottom: 0.7em;
+    } 
+  .info-wrap {
+    @include opacity(0);
+    @include transition(opacity .25s ease-out);
+    color: $white;
+    position: absolute;
+    height: 93.8%;
+    left: 4.17%;
+    top: 3.1%;
+    width: 91.7%;
+    background: rgba(52,93,131,0.8);
+    clear: both;
+    &:hover {
+      @include opacity(1);
+      .info-content {
+        padding-top: 0;
+      }
+    }
+
+    .info-wrap-inner {
+      display: table;
+      height: 100%;
+      width: 100%;
+    }
+
+    .info-content {
+      text-align: center;
+      display: table-cell;
+      vertical-align: middle;
+      @include transition(all .25s ease-out);
+
+      h3,p{
+        margin: 0;
+      }
+
+      h3 {
+        color: $white;
+
+      }
+    }
+  }       
+  }
+
+  .caseStudy-cta {
+    text-align: center;
+  }
+
+  
+}
+
+.project-wrapper {
+  @include media($tablet_portrait){
+    padding: 1.2em;
+    text-align: center;
+  }      
+
+}
+
+// Expander function
+.wins-holder {
+  padding: 0;
+}
+.angleSeven-expander {
+    position: absolute;
+    background: $white;
+    top: auto;
+    left: 0;
+    width: 100%;
+    margin-top: 10px;
+    text-align: left;
+    height: 0;
+    overflow: hidden;
+}
+
+.angleSeven-expander-inner {
+    padding: 50px 30px;
+    height: 100%;
+}
+
+.angleSeven-close {
+    position: absolute;
+    font-size: 2em;
+    font-weight: 300;
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.angleSeven-details a::before {
+    content: '\2192';
+    display: inline-block;
+    margin-right: 10px;
+}
+ 
+.angleSeven-details a:hover {
+    border-color: #999;
+    color: #999;
+}
+ 
+.angleSeven-grid li.angleSeven-expanded > a::after {
+    top: auto;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: #000;
+    border-width: 15px;
+    left: 50%;
+    margin: -20px 0 0 -15px;
+}
+
+.angleSeven-fullimg,
+.angleSeven-details {
+    @include span-columns(6);
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    @include media($tablet){
+      text-align: center;
+      padding: 1em 0;
+      @include span-columns(8);
+      float: none;
+    }     
+}
+
+.angleSeven-fullimg {
+    @include media($tablet){
+      display: none;
+    }   
+}
+
+.action-call {
+  padding: 7em;
+  text-align: center;
+  @include media($tablet){
+    padding: 2em;
+  }
+
+  .action-link {
+    font-size: 2.8em;
+    font-family: $bold-font-family;
+    font-weight: 700;
+    text-align: center;
+    color: $charcoal;    
+    &:hover {
+      color: $blue;
+    }
+  }
+
+}
+
+.angleSeven-details {
+  a {
+    display: inline-block;
+  }
+  p {
+    color: $charcoal;
+  }
+}
+
+.action-copy {
+  font-size: 2.8em;
+  font-family: $bold-font-family;
+  font-weight: 400;
+  text-align: center;
+  color: $charcoal;
+  @include media($tablet) {
+    font-size: 2.2em;
+    line-height: 1.4;
+    text-align: center;
+  }
+}
+
+.single-entry {
+  border-bottom: 1px solid $blue;
+  padding: 1.5em 0;
+  position: relative;
+  text-align: center;
+  color: $white;
+
+  .entry-image {
+    background: $black;
+    position: relative;
+
+    img {
+      width: 100%;
+      @include opacity(1);
+      @include transition(opacity .25s ease-out);
+    }
+  }
+
+  a {
+    color: $white;
+    &:hover {
+      color: $blue;
+      img {
+        @include opacity(.5);
+        @include transition(all .25s ease-out);
+      }
+    }    
+  }
+  .entry-title {
+    position: absolute;
+    top: 50%;    
+    margin: -6em 0 0;
+    width: 100%;
+
+    @include media($tablet){
+      margin: -5em 0 0;
+
+    }      
+
+    h2 {
+      font-family: $bold-font-family;
+      line-height: 1.4;      
+      margin-bottom: 0;
+
+    @include media($tablet){
+      font-size: 2em;
+    }      
+    @include media($tablet_portrait){
+      font-size: 1.5em;
+    }    
+    }
+  }
+  
+}
+
+
+// Pagination for blog
+.journal-pagination {
+  .pagination-wrapper {
+    padding-top: 0.5em;
+  }
+  .page-numbers{
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    li{
+      display: inline-block;
+      font-family: $body-font-family;
+      font-size: 1.7em;
+      padding-left: 1em;
+
+      a {
+        color: $charcoal;
+        &:hover {
+          color: $blue;
+        }
+
+        &.current {
+          color: $blue;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+.brand-history {
+
+  .content-wrapper {
+    // border-bottom: 1px solid $blue;
+    padding-bottom: 3em;
+    @include media($tablet){
+      padding: 2em;
+    }
+  }
+
+  .content-image {
+    @include span-columns(6);
+    padding-top: 2.2em;
+    @include media($tablet_portrait){
+      @include span-columns(8);
+      padding: 1em;
+    }     
+    img { 
+      width: 100%;
+    }
+  }
+
+  .content-copy {
+    @include span-columns(6);
+    line-height: 1.5;
+    @include media($tablet_portrait){
+      @include span-columns(8);
+      padding: 1em;
+      text-align: center;
+
+    }     
+  }
+}
+
+.mission-goals {
+  background: $charcoal;
+  // color: 
+
+  .mission-wrapper {
+    padding: 2em;
+
+    article {
+      @include span-columns(9);
+      color: $white;
+      text-align: center;
+      margin: 0 auto;
+      float: none;
+      &:last-child {
+        margin: 0 auto;
+      }
+
+      @include media($tablet_portrait){
+        @include span-columns(8);
+        padding: 1em;
+        
+
+      }       
+
+      img {
+        width: 100%;
+        max-width: 312px;
+      }
+
+      p {
+        font-family: $header-font-family;
+        // font-size: 0.85em;
+        line-height: 1.7;
+        margin: 1.5em auto;
+      }
+    }
+  }
+}
+
+.post {
+
+  img {
+    width: 100%;
+  }
+
+  p {
+    line-height: 1.7;
+
+  }
+  .quote-wrapper {
+    blockquote {
+      text-align: center;
+
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+
+  .entry-content {
+    
+    @include media($tablet){
+      text-align: center; 
+      padding: 1em;  
+    }     
+
+    li {
+      line-height: 1.8;
+      @include media($tablet){
+        text-align: left;  
+      }      
+    }
+
+    .entry-wrapper {
+      @include span-columns(8);      
+      float: none;
+      &:last-child {
+        margin: 0 auto;        
+      }
+      @include media($tablet) {
+        @include span-columns(8);
+        float: none;
+      }
+    }
+  }
+
+  blockquote {
+    @include media($tablet){
+      text-align: center;  
+      font-size: 1.7em; 
+    }     
+  }
+}
+
+.services-list {
+  padding: 0;
+  margin: 0;
+  li {
+    float: left;
+    width: 47%;
+    list-style-type: none;
+    text-align: left;
+    @include media($tablet) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+#newsletter-thank-you {
+  .main-content {
+    padding: 2em 0;
+
+    .container {
+      text-align: center;
+      font-size: 2.2em;
+      line-height: 1.5;
+    }
+  }
+}

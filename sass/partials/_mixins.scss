@@ -1,0 +1,27 @@
+@mixin btn-black(){
+  color: $white;
+  background: $black;
+  padding: 0.65em 1.9em;
+  font-size: 0.89em;
+  font-family: $bold-font-family;
+  @include transition(background .25s ease-in);
+  &:hover {
+    color: $black;
+    background: $white;
+    @include transition(background .25s ease-in);
+  }  
+}
+
+@mixin btn-blue(){
+  color: $white;
+  background: $blue;
+  padding: 0.65em 1.9em;
+  font-size: 0.89em;
+  font-family: $bold-font-family;
+  @include transition(background .25s ease-in);
+  &:hover {
+    color: $blue;
+    background: $black;
+    @include transition(background .25s ease-in);
+  }
+}

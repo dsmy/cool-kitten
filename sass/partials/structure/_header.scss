@@ -1,0 +1,124 @@
+.header {
+  background: $white;
+  height: 100px;
+  overflow: hidden;
+  @include transition(height .25s ease-out);
+  &.active {
+    height: 217px;
+    @include transition(height .25s ease-out);
+  }
+
+
+  .logo-wrapper {
+    margin: 1.2em auto;
+    float: left;
+
+    @include media($tablet) {
+      padding-left: 4%;
+      
+    }        
+
+    a {     
+      display: block;  
+    }
+
+  }
+
+  .watchtower {
+    display: none;
+    height: 40px;
+    // width: 100%;
+    cursor: pointer;
+    background: $charcoal;
+    color: $white;
+    position: absolute;
+    top: 1.4em;
+    right: 5%;
+    line-height: 1.5;
+    text-align: center;
+    &:after {
+      content: '\2630'; 
+      font-family: 'angleseven';
+      font-size: 2em;
+      font-style: normal;
+      font-weight: normal;
+      speak: none;
+      display: inline-block;
+      text-decoration: inherit;
+      // width: 1em;
+      margin-right: 0.2em;
+      text-align: center;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1.1em;
+      margin-left: 0.2em;      
+    }
+    @include media($tablet) {
+      display: table;
+      
+    }
+
+  }  
+
+  .nav-bar {
+    float: right;
+    display: block;
+    width: 50%;
+    text-align: right;
+    padding: 1em 0;
+    @include media($tablet) {
+      text-align: center;
+      width: 100%;
+      padding: 0.2em 0;
+      // border-top: 1px solid $blue;
+      background: $charcoal;
+      margin: 0.2em 0;
+
+      
+    }    
+    
+    
+    li {
+      display: inline;
+      padding: 0 0.7em;
+      font-size: 1.3em;
+      font-family: $header-font-family;
+      @include media($tablet) {
+        display: table;
+        width: 100%;
+        padding: 0.6em 0;
+        border-bottom: 1px solid $blue;
+        &:last-child {
+          border: none;
+        }
+        
+      }      
+
+      a {
+        color: $charcoal;
+        @include media($tablet){
+          color: $white;
+          display: block;
+          
+        }
+
+        &:hover {
+          color: $blue;
+        }
+      }
+      
+    }
+
+    .current-menu-item  {       
+      a {
+        color: $blue;
+        border-bottom: 2px solid $blue;
+
+      }      
+    }
+
+
+
+  }
+  
+}

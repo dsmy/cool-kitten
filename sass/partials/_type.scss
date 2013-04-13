@@ -1,0 +1,42 @@
+// global typography styles 
+
+body{
+	font-family: $body-font-family;
+	color: #4d4d4d;
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+}
+
+// Links 
+a { 
+	color: $blue;
+	text-decoration: none;
+	@include transition(color .25s ease-in);
+	&:hover { color: $black; }
+}
+
+h1, h2, h3, h4, h5, h6 { font-weight: 400; font-family: $body-font-family;}
+h1 { font-size: 3.444em; line-height: $base-line-height;}
+h2 { font-size: 2.778em; line-height: 1em; }
+h3 { font-size: 28px; }
+h4 { font-size: 20px; }
+
+hr { background: #e5eae4; margin: 90px 0; }
+
+p {
+	font-family: $body-font-family;
+  font-weight: 400;
+}
+
+blockquote {
+  font-family: $body-font-family;
+  font-weight: 300;
+  font-style: italic;
+  margin: 0;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.6em;
+  line-height: 1.5;
+  color: $gray;  
+
+}

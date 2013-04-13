@@ -1,0 +1,41 @@
+// App Style Here!
+$base-font-size: 18px;
+$base-line-height: 24px;
+@include establish-baseline;
+
+// Font Families
+
+$header-font-family: 'Open Sans', sans-serif;
+$body-font-family: 'Open Sans', sans-serif;
+$emphasis-font-family: 'Open Sans', sans-serif;
+$bold-font-family: 'Open Sans', sans-serif;
+
+// Base Site colors 
+$white: #fff;
+$black: #000;
+$charcoal: #252627;
+$blue: #336699;
+$gray: #4d4d4d;
+
+
+// site wide wrapper 
+.global-wrapper {
+	width: 100%;
+	min-height: 1000px;
+	padding-top: 2em;
+}
+
+.container{ 
+	@include outer-container;
+	@include media($tablet){
+		width: auto;
+	}
+}
+.full_wrapper {
+	width: 100%;
+}
+
+.page{ 
+	//padding-top: 55px;
+	&.push_footer{ margin-bottom: 35px; }
+}
