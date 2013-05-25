@@ -1,21 +1,15 @@
 jQuery(document).ready(function ($) {
 
 
-    $(window).stellar();
+    $(window).stellar({
+
+    });
 
     var links = $('.navigation li');
     slide = $('.slide');
     button = $('.button');
     mywindow = $(window);
     htmlbody = $('html,body');
-
- 
-    mywindow.scroll(function () {
-        if (mywindow.scrollTop() == 0) {
-            $('.navigation li[data-slide="1"]').addClass('active');
-            $('.navigation li[data-slide="2"]').removeClass('active');
-        }
-    });
 
     function goToByScroll(dataslide) {
         htmlbody.animate({
