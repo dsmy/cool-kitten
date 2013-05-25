@@ -8,9 +8,9 @@ body {
   background-color: #ffffff;
 }
 
-img {
-  max-width: 100%;
-}
+// img {
+//   max-width: 100%;
+// }
 
 a {
   &:link {
@@ -27,6 +27,17 @@ a {
   }
 }
 
+.content {
+  text-align: center;
+  @include span-columns(7);
+  float: none;
+  margin: 0 auto;
+
+  &:last-child {
+    float: none;
+    margin: 0 auto;
+  }
+}
 
 /* General Slides */
 
@@ -41,20 +52,22 @@ a {
 /* Slide 1 */
 
 #slide1 {
-  background-color: #ffffff;
+  background-color: #3fa9f5;
   h1 {
     font-size: 3.8em;
     letter-spacing: -3px;
-    line-height: 0px;
-    color: #8a8683;
+    color: #fff;
     font-weight: 700;
   }
   h2 {
     font-size: 2em;
-    color: #8a8683;
-    line-height: 0px;
+    color: #fff;
     padding-bottom: 20px;
     font-weight: 400;
+  }
+
+  p {
+    color: #fff;
   }
 }
 
@@ -67,14 +80,12 @@ a {
   h1 {
     font-size: 3.8em;
     letter-spacing: -3px;
-    line-height: 0px;
     color: #ffffff;
     font-weight: 700;
   }
   h2 {
     font-size: 2em;
     color: #ffffff;
-    line-height: 0px;
     padding-bottom: 20px;
     font-weight: 400;
   }
@@ -87,14 +98,12 @@ a {
   h1 {
     font-size: 3.8em;
     letter-spacing: -3px;
-    line-height: 0px;
-    color: #8a8683;
+    color: #3fa9f5;
     font-weight: 700;
   }
   h2 {
     font-size: 2em;
-    color: #8a8683;
-    line-height: 0px;
+    color: #3fa9f5;
     padding-bottom: 20px;
     font-weight: 400;
   }
@@ -117,14 +126,12 @@ a {
   h1 {
     font-size: 3.8em;
     letter-spacing: -3px;
-    line-height: 0px;
     color: #ffffff;
     font-weight: 700;
   }
   h2 {
     font-size: 2em;
     color: #ffffff;
-    line-height: 0px;
     padding-bottom: 20px;
     font-weight: 400;
   }
@@ -162,10 +169,7 @@ a {
   #decorative {
     display: none;
   }
-  #content {
-    text-align: center;
-    width: 100%;
-  }
+
   #slide1 {
     h1, h2 {
       line-height: 1em;
@@ -215,24 +219,5 @@ a {
     position: relative;
     padding: 150px 0;
   }
-  #slide1 {
-    h1, h2 {
-      line-height: 1em;
-    }
-  }
-  #slide2 {
-    h1, h2 {
-      line-height: 1em;
-    }
-  }
-  #slide3 {
-    h1, h2 {
-      line-height: 1em;
-    }
-  }
-  #slide4 {
-    h1, h2 {
-      line-height: 1em;
-    }
-  }
+
 }

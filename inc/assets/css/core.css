@@ -414,29 +414,34 @@ blockquote {
 }
 
 /* Navigation */
-.menu {
+header {
   position: fixed;
   top: 0px;
   width: 100%;
   height: auto;
   background-color: #ffffff;
   z-index: 100;
+  padding: 0.8em 0;
+  border-image: url('../images/live-inspired-topbdr.png') 30 30 round;
+  border-bottom: 0;
+  border-right: 0;
+  border-left: 0;
 }
 
-#logo {
-  text-align: center;
-  margin: 10px 0;
+.branding {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 23.23176%;
 }
-
-#nav {
-  text-align: right;
-  margin: 30px 0 0 0;
+.branding:last-child {
+  margin-right: 0;
 }
 
 .navigation {
   float: right;
   list-style: none;
-  margin: 0;
+  margin: 0.5em 0;
 }
 .navigation li {
   float: left;
@@ -461,10 +466,6 @@ body {
   background-color: #ffffff;
 }
 
-img {
-  max-width: 100%;
-}
-
 a:link {
   color: #f68f67;
   text-decoration: none;
@@ -478,6 +479,23 @@ a:visited {
   text-decoration: none;
 }
 
+.content {
+  text-align: center;
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 57.35098%;
+  float: none;
+  margin: 0 auto;
+}
+.content:last-child {
+  margin-right: 0;
+}
+.content:last-child {
+  float: none;
+  margin: 0 auto;
+}
+
 /* General Slides */
 .slide {
   background-attachment: fixed;
@@ -489,21 +507,22 @@ a:visited {
 
 /* Slide 1 */
 #slide1 {
-  background-color: #ffffff;
+  background-color: #3fa9f5;
 }
 #slide1 h1 {
   font-size: 3.8em;
   letter-spacing: -3px;
-  line-height: 0px;
-  color: #8a8683;
+  color: #fff;
   font-weight: 700;
 }
 #slide1 h2 {
   font-size: 2em;
-  color: #8a8683;
-  line-height: 0px;
+  color: #fff;
   padding-bottom: 20px;
   font-weight: 400;
+}
+#slide1 p {
+  color: #fff;
 }
 
 /* Slide 2 */
@@ -515,14 +534,12 @@ a:visited {
 #slide2 h1 {
   font-size: 3.8em;
   letter-spacing: -3px;
-  line-height: 0px;
   color: #ffffff;
   font-weight: 700;
 }
 #slide2 h2 {
   font-size: 2em;
   color: #ffffff;
-  line-height: 0px;
   padding-bottom: 20px;
   font-weight: 400;
 }
@@ -534,14 +551,12 @@ a:visited {
 #slide3 h1 {
   font-size: 3.8em;
   letter-spacing: -3px;
-  line-height: 0px;
-  color: #8a8683;
+  color: #3fa9f5;
   font-weight: 700;
 }
 #slide3 h2 {
   font-size: 2em;
-  color: #8a8683;
-  line-height: 0px;
+  color: #3fa9f5;
   padding-bottom: 20px;
   font-weight: 400;
 }
@@ -563,14 +578,12 @@ a:visited {
 #slide4 h1 {
   font-size: 3.8em;
   letter-spacing: -3px;
-  line-height: 0px;
   color: #ffffff;
   font-weight: 700;
 }
 #slide4 h2 {
   font-size: 2em;
   color: #ffffff;
-  line-height: 0px;
   padding-bottom: 20px;
   font-weight: 400;
 }
@@ -610,11 +623,6 @@ a:visited {
 
   #decorative {
     display: none;
-  }
-
-  #content {
-    text-align: center;
-    width: 100%;
   }
 
   #slide1 h1, #slide1 h2 {
@@ -662,22 +670,6 @@ a:visited {
     width: 100%;
     position: relative;
     padding: 150px 0;
-  }
-
-  #slide1 h1, #slide1 h2 {
-    line-height: 1em;
-  }
-
-  #slide2 h1, #slide2 h2 {
-    line-height: 1em;
-  }
-
-  #slide3 h1, #slide3 h2 {
-    line-height: 1em;
-  }
-
-  #slide4 h1, #slide4 h2 {
-    line-height: 1em;
   }
 }
 .ir {

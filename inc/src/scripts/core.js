@@ -3,25 +3,12 @@ jQuery(document).ready(function ($) {
 
     $(window).stellar();
 
-    var links = $('.navigation').find('li');
+    var links = $('.navigation li');
     slide = $('.slide');
     button = $('.button');
     mywindow = $(window);
     htmlbody = $('html,body');
 
-
-    slide.waypoint(function (event, direction) {
-
-        dataslide = $(this).attr('data-slide');
-
-        if (direction === 'down') {
-            $('.navigation li[data-slide="' + dataslide + '"]').addClass('active').prev().removeClass('active');
-        }
-        else {
-            $('.navigation li[data-slide="' + dataslide + '"]').addClass('active').next().removeClass('active');
-        }
-
-    });
  
     mywindow.scroll(function () {
         if (mywindow.scrollTop() == 0) {
