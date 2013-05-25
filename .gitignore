@@ -1,4 +1,3 @@
 .DS_Store
 
-js/scripts.min.js
-css/style.min.css
+.sass-cache
